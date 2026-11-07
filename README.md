@@ -65,6 +65,10 @@ To replace or reorder photos later:
 
 The `message`, `heading`, `note`, and `caption` fields in `script.js` are editable. The initial content is also present in `index.html` for a meaningful first wish before JavaScript loads; update it if you change the opening message. The recipient’s name appears in both files.
 
+## Deployment
+
+A minimal release is prepared in `deploy/`, with a matching `khushboo-diwali.zip`. Upload **only that folder**, not this entire project, to a static host. See [DEPLOYMENT.md](DEPLOYMENT.md) for Netlify drag-and-drop instructions and photo-privacy considerations. Preparing the bundle does not publish it.
+
 ## Accessibility and privacy
 
 - A real Next/Replay button works throughout; page taps also advance through the photos.
