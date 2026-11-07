@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#25152d">
+  <meta name="description" content="Six little Diwali surprises, just for Khushboo.">
+  <title>Khushboo Ki Diwali</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🪔%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-scene="0" data-stage="surprises" data-started="true" data-presentation="ribbon">
+  <div class="video-background" id="video-background" aria-hidden="true" hidden>
+    <video id="background-video" muted loop playsinline preload="none" tabindex="-1"></video>
+  </div>
+  <div class="night-wash" aria-hidden="true"></div>
+  <canvas class="festival-atmosphere" id="festival-atmosphere" aria-hidden="true"></canvas>
+  <div class="spotlight-backdrop" id="spotlight-backdrop" aria-hidden="true"></div>
+  <div class="sticker-layer" id="sticker-layer" aria-hidden="true"></div>
+  <div class="garland" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="hanging-light hanging-light--left" aria-hidden="true"><i></i><b></b></div>
+  <div class="hanging-light hanging-light--right" aria-hidden="true"><i></i><b></b></div>
+
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="Khushboo Ki Diwali, start again"><span aria-hidden="true">✳</span> a little diwali magic</a>
+      <span class="occasion">a festival, just for you <strong>2026</strong></span>
+    </header>
+
+    <main id="experience" class="experience" aria-labelledby="greeting">
+      <div class="introduction">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> for my favourite kind of sunshine <span aria-hidden="true">✦</span></p>
+        <h1 id="greeting">Happy Diwali<span>,</span> Khushboo</h1>
+        <p class="intro-note">Your first little Diwali surprise is already waiting.</p>
+      </div>
+
+      <div class="gift-layout">
+        <section class="photo-section" aria-label="Your Diwali keepsake">
+          <div class="photo-surround">
+            <div class="photo-halo" aria-hidden="true"></div>
+            <div class="chapter-ornament" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="side-note" aria-hidden="true">a whole lot of lovely, a little bit of magic</span>
+            <div class="photo-card" id="photo-card">
+              <span class="washi-tape" aria-hidden="true"></span>
+              <div class="photo-window" id="photo-window">
+                <img id="scene-photo" class="scene-photo" src="assets/photos/moment-01.webp" alt="Khushboo taking a mirror selfie in a blue denim shirt, with a pink phone case" decoding="async" fetchpriority="high">
+                <div class="photo-placeholder" id="photo-placeholder" role="img" aria-label="A little glowing diya surrounded by flowers; a fallback for Khushboo’s first photo." hidden>
+                  <canvas id="keepsake-art" width="640" height="720" aria-hidden="true"></canvas>
+                  <span class="placeholder-fallback" aria-hidden="true">🪔</span>
+                  <div class="placeholder-caption" aria-hidden="true">
+                    <span class="placeholder-kicker">a little space for</span>
+                    <span class="placeholder-title" id="placeholder-title">your sunshine</span>
+                    <span class="placeholder-note" id="placeholder-note">your photo belongs here</span>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-caption"><span id="photo-label">01 / the one who lights it up</span><span class="drawn-heart" aria-hidden="true">♡</span></div>
+            </div>
+            <span class="photo-spark photo-spark--one" aria-hidden="true">✧</span>
+            <span class="photo-spark photo-spark--two" aria-hidden="true">✦</span>
+            <span class="keepsake-sticker keepsake-sticker--bow" aria-hidden="true"><i></i><i></i><b></b></span>
+            <span class="keepsake-sticker keepsake-sticker--heart" aria-hidden="true">♡</span>
+            <span class="keepsake-sticker keepsake-sticker--note" id="keepsake-note" aria-hidden="true">the main character ✨</span>
+          </div>
+        </section>
+
+        <section class="message-section" aria-label="A little message for you">
+          <div class="message-content" id="message-content">
+            <span class="note-corner" aria-hidden="true"></span>
+            <p class="moment-label"><span class="small-flower" aria-hidden="true">✳</span><span id="moment-label">a little hello</span></p>
+            <h2 class="scene-heading" id="scene-heading">Some people just<br>glow differently.</h2>
+            <span class="note-divider" aria-hidden="true">✦</span>
+            <p class="scene-message" id="scene-message">Diwali ki lights bhi tumhari smile ke saamne fail hain ✨</p>
+            <p class="personal-note" id="personal-note">Aur tum? Tum toh poora festival ho.</p>
+            <div class="note-seal" aria-hidden="true"><span id="note-symbol">♡</span></div>
+          </div>
+          <div class="navigation">
+            <button class="next-button" id="next-button" type="button">
+              <span id="button-label">Ek aur surprise</span><span class="button-arrow" id="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="tap-hint" id="tap-hint">or click anywhere for the next photo</p>
+            <div class="progress-row">
+              <ol class="progress-dots" id="progress-dots" aria-label="Six little surprises">
+                <li class="is-current" aria-current="step"><span class="sr-only">Surprise 1</span></li>
+                <li><span class="sr-only">Surprise 2</span></li>
+                <li><span class="sr-only">Surprise 3</span></li>
+                <li><span class="sr-only">Surprise 4</span></li>
+                <li><span class="sr-only">Surprise 5</span></li>
+                <li><span class="sr-only">Surprise 6</span></li>
+              </ol>
+              <span class="scene-count" id="scene-count" aria-hidden="true">01 <span>/ 06</span></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="finale-keepsakes" id="finale-keepsakes" aria-hidden="true" hidden>
+        <p>six little moments. one very lovely you.</p>
+        <div class="mini-photos">
+          <span><img src="assets/photos/moment-01.webp" alt="" loading="lazy"></span>
+          <span><img src="assets/photos/moment-02.webp" alt="" loading="lazy"></span>
+          <span><img src="assets/photos/moment-03.webp" alt="" loading="lazy"></span>
+          <span><img src="assets/photos/moment-04.webp" alt="" loading="lazy"></span>
+          <span><img src="assets/photos/moment-05.webp" alt="" loading="lazy"></span>
+          <span><img src="assets/photos/moment-06.webp" alt="" loading="lazy"></span>
+        </div>
+      </div>
+      <p class="sr-only" id="scene-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p class="no-script">This first wish is for you, Khushboo. Enable JavaScript to reveal all six little surprises.</p></noscript>
+    </main>
+
+    <footer class="footer">
+      <span class="footer-wish">a tiny gift, with a big smile</span>
+      <div class="little-diyas" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="footer-controls">
+        <span class="footer-note">made to make you smile ♡</span>
+        <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" hidden>Pause animations</button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
