@@ -10,7 +10,7 @@ From this folder, run:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open **http://localhost:8000** in your browser. Stop the preview with Ctrl+C.
+Open **https://abhishuleshgevin-diwali-gift.vercel.app/** in your browser. Stop the preview with Ctrl+C.
 
 The first photo, message, and **Ek aur surprise** button appear immediately. Tap the page or use the button to move through six distinct festive chapters. The final Diwali wish stays visible until **Phir se dekhein? 💛** is chosen.
 
