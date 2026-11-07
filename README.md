@@ -97,3 +97,4 @@ Manual browser checklist:
 - Tab to the opening button and use Enter/Space; check visible focus.
 - Try reduced motion and a missing-image path.
 - Check 320px/390px widths, desktop, and short landscape: no sideways scrolling, legible text, intact photos.
+# diwali-gift
